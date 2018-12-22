@@ -1,0 +1,17 @@
+<h2>Schools Info</h2>
+<table class="table table-striped">
+            <tr>
+                <th>School Name</th>
+                
+                <th>Actions</th>
+            </tr>
+           
+                <tr *ngFor="let school of ArrayOfSchools">
+                    <td>{{school.name}}</td>  
+                    <td>
+                        <button class="btn btn-info" (click)="ShowSchoolDetails(school._id)">Info</button>
+                        <button class="btn btn-danger" (click)="DeleteSchool(school._id)">Del</button>
+                    </td>
+                </tr>
+</table>
+       

@@ -1,0 +1,10 @@
+.schools{
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 20px;
+    min-height: 300px;
+}
+.schools span{
+    cursor: pointer;
+}

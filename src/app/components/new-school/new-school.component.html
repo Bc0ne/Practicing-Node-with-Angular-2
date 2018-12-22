@@ -1,0 +1,21 @@
+<div class="container">
+
+    <form #insertSchoolForm="ngForm">
+      <h2>Add New School</h2>
+        <div class="col-md-6">
+          <div class='form-group'>
+            <input class="form-control"  placeholder="Enter School Name" ngModel name="name"><br>
+          </div>
+          <div class='form-group'>
+            <input class="form-control" placeholder="Enter School Address" ngModel name="addr"><br>
+          </div>
+          <div class='form-group'>
+            <input class="form-control" placeholder="Enter School Type" ngModel name="age"><br>
+          </div>
+          <div class='form-group'>
+            <button class="btn btn-primary" (click)="saveSchool(insertSchoolForm.value)">Save</button>
+          </div>
+        </div>
+  </form>
+  
+</div>

@@ -1,0 +1,19 @@
+
+<div >
+<h2>Add new student</h2>
+
+<form #insertStudentForm="ngForm">
+    <div class="col-md-6">
+    <div class='form-group'>
+      <input class="form-control" placeholder="Enter Student Name" required ngModel name="name">
+    </div>
+    <div class='form-group'>
+      <input class="form-control" placeholder="Enter Student Address" required ngModel name="addr">
+    </div>
+    <div class='form-group'>
+      <input class="form-control" placeholder="Enter Student Age" required ngModel name="age">
+    </div>
+      <button class="btn btn-primary" (click)="addNewStudent(insertStudentForm)">Save</button>
+    </div>
+</form>
+</div>

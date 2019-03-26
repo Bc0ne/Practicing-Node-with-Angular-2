@@ -106,7 +106,6 @@ app.delete('/api/db/deleteStudent/:sid/:stid',(req,res)=>{
     });
 });
 
-
 //delete school
 app.delete('/api/school/delschool/:id',(req,res)=>{
     let schoolid= req.params.id;
